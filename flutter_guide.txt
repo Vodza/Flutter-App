@@ -1,0 +1,24 @@
+Mini-Project 3: OCR Expense Tracker & Receipt Parser (Flutter & Dart)
+Learning Objectives:
+Develop a personal finance management app in Flutter with on-device AI.
+Integrate Google ML Kit Text Recognition for offline receipt parsing.
+Build regex heuristic parser to extract monetary totals, merchant names, and transaction dates.
+Render interactive animated pie and bar charts using CustomPainter.
+Prerequisites:
+Flutter 3.x, Dart 3, Google ML Kit, SQLite / Isar, CustomPainter
+
+Project Overview & Problem Scenario
+Students and club treasurers frequently handle physical supermarket receipts and bills. Typing expense numbers into spreadsheets is tedious and error-prone.
+
+📋 Core Functional Specifications:
+Camera Capture & Image Cropping:
+Live camera viewfinder with flash toggle, focus tap, and framing crop overlay.
+On-Device Text Recognition & Regex Heuristics:
+Integrates google_mlkit_text_recognition for offline, sub-100ms on-device text extraction (zero cloud cost).
+Custom heuristic regex engine parsing total amounts (e.g. 150,000 VND, 150.000 đ), dates (DD/MM/YYYY), and merchant names.
+Interactive review screen allowing manual edits before saving.
+Local Database & Transaction Lifecycle:
+Persistent storage using sqflite or isar with category classification (Food, Study, Travel, Gear, Entertainment).
+Receipt thumbnail caching in application storage directory.
+Custom Canvas Visualizations with CustomPainter:
+Animated category distribution donut/pie chart and weekly spending bar chart drawn directly on canvas without third-party chart libraries.
